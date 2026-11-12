@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{CC665AB2-AFF3-4655-ACB0-7B7680CB374E}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Project1</RootNamespace>
+    <AssemblyName>Project1</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\System.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="enemies\Boss.cs" />
+    <Compile Include="enemies\Enemy1.cs" />
+    <Compile Include="enemies\Enemy2.cs" />
+    <Compile Include="enemies\Enemy3.cs" />
+    <Compile Include="enemies\Enemy4.cs" />
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\charactercreation.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Pages\charactercreation.Designer.cs">
+      <DependentUpon>charactercreation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\FightPage.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Pages\FightPage.Designer.cs">
+      <DependentUpon>FightPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\InventoryPage.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Pages\InventoryPage.Designer.cs">
+      <DependentUpon>InventoryPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\HomePage.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Pages\HomePage.Designer.cs">
+      <DependentUpon>HomePage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\MapPage.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Pages\MapPage.Designer.cs">
+      <DependentUpon>MapPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\ShopPage.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Pages\ShopPage.Designer.cs">
+      <DependentUpon>ShopPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Player.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="shopItems\armor.cs" />
+    <Compile Include="shopItems\potions.cs" />
+    <Compile Include="shopItems\ShieldItem.cs" />
+    <Compile Include="shopItems\weaponsMage.cs" />
+    <Compile Include="shopItems\weaponsTank.cs" />
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pages\charactercreation.resx">
+      <DependentUpon>charactercreation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pages\FightPage.resx">
+      <DependentUpon>FightPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pages\InventoryPage.resx">
+      <DependentUpon>InventoryPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pages\HomePage.resx">
+      <DependentUpon>HomePage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pages\MapPage.resx">
+      <DependentUpon>MapPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pages\ShopPage.resx">
+      <DependentUpon>ShopPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Spooky Pixel Panoramas - 1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Spooky Pixel Panoramas - 3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\origbig.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\orig.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\resized_984x493.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Gemini_Generated_Image_lnjuwilnjuwilnju.jfif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Gemini_Generated_Image_q29xofq29xofq29x.jfif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Gemini_Generated_Image_l1r3f2l1r3f2l1r3.jfif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Fight page.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image-Photoroom.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fight map.png" />
+    <None Include="Resources\characterCreation.png" />
+    <Content Include="Resources\Gemini_Generated_Image_wep1pkwep1pkwep1.jfif" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
