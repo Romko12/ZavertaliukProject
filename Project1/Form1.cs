@@ -23,13 +23,12 @@ namespace Project1
         public Form1()
         {
             InitializeComponent();
-            homePage = new HomePage();
+            homePage = new HomePage(this);
             this.panelContent.Controls.Clear();
             this.panelContent.Controls.Add(homePage);
             homePage.InvButton2.Enabled = false;
             homePage.shopButton2.Enabled = false;
         }
-
 
 
 

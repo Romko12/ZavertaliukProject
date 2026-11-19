@@ -1,22 +1,17 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace Project1.Pages
 {
     public partial class HomePage : UserControl
     {
-        Form1 form1 = new Form1();
-        public HomePage()
+        Form1 mainForm;
+        public HomePage(Form1 mainForm)
         {
             InitializeComponent();
-            this.form1 = form1;
+            this.mainForm = mainForm;
         }
 
         private void playButton_Click(object sender, EventArgs e)
@@ -25,13 +20,13 @@ namespace Project1.Pages
             if (varplay == 0)
             {
                 varplay = 1;
-                this.form1.panelContent.Controls.Clear();
-                this.form1.panelContent.Controls.Add(new charactercreation());
+                this.mainForm.panelContent.Controls.Clear();
+                this.mainForm.panelContent.Controls.Add(new charactercreation());
             }
             else
             {
-                this.form1.panelContent.Controls.Clear();
-                this.form1.panelContent.Controls.Add(new MapPage());
+                this.mainForm.panelContent.Controls.Clear();
+                this.mainForm.panelContent.Controls.Add(new MapPage());
             }
         }
     }

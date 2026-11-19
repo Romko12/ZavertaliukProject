@@ -1,11 +1,22 @@
-﻿using System;
+﻿using Project1.Entities;
+using Project1.Entities.shopItems;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
+
 namespace Project1.shop
-{
+{ 
+    public abstract class BaseArmor : BaseItem
+    {
+        public BaseArmor(string name, int price, int value) : base(name, price, value)
+        {
+        }
+        public int GetDefense() => _value;
+    }
+
     class armor1
     {
         public string name = "Armor of ";
@@ -30,5 +41,5 @@ namespace Project1.shop
         public int cost = 400;
         public int itemDefense = 20;
     }
-
 }
+

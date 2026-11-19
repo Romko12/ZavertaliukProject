@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Project1;
 
 namespace Project1.Pages
 {
@@ -20,19 +21,19 @@ namespace Project1.Pages
 
         private void button1_Click(object sender, EventArgs e)
         {
-            if (MageRadioButton2.Checked)
-            {
-                Player player = new Player(textBox1.Text, 2);
-            }
-            else if (TankRadioButton1.Checked)
-            {
-                Player player = new Player(textBox1.Text, 1);
-            }
+           if (MageRadioButton2.Checked)
+           {
+             MagePlayer player = new MagePlayer(textBox1.Text);
+           }
+           else if (TankRadioButton1.Checked)
+           {
+             TankPlayer player = new TankPlayer(textBox1.Text);
+           }
 
-            else
-            {
-                MessageBox.Show("Please select a class.");
-            }
+           else
+           {
+               MessageBox.Show("Please select a class.");
+           }
 
         }
     }
