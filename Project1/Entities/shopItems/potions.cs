@@ -14,11 +14,7 @@ namespace Project1.shop
         }
         public int GetRestoreAmount() => _value;
 
-        public void DisplayPotions()
-        {
-            basePotion healingPotion = new basePotion("Healing Potion", 10, 20);
-            basePotion manaPotion = new basePotion("Mana Potion", 10, 20);
-        }
+       
     }
 }
 

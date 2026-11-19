@@ -7,7 +7,7 @@ using Project1.Entities;
 using Project1.Entities.enemies;
 namespace Project1
 {
-    public class Player : BaseCreature
+    public class PlayerBase : BaseCreature
     {
         private int money = 0;
         private int armor = 0;
@@ -18,7 +18,7 @@ namespace Project1
         private int potion2Count = 0;
 
 
-        public Player(string name) : base(name, 0)
+        public PlayerBase(string name) : base(name, 0)
         {
 
             money = 0;
@@ -88,7 +88,7 @@ namespace Project1
             }
         }
     }
-    public class MagePlayer : Player
+    public class MagePlayer : PlayerBase
     {
         private Boolean aditionalweapon = false;
         protected int mana = 100;
@@ -119,7 +119,7 @@ namespace Project1
             MagePlayer Player = new MagePlayer(name);
         }
     }
-    public class TankPlayer : Player
+    public class TankPlayer : PlayerBase
     {
         protected Boolean shieldEquipped = false;
         public TankPlayer(string name) : base(name)
