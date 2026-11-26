@@ -8,11 +8,11 @@ using System.Threading.Tasks;
 
 namespace Project1.Services
 {
-    public class generate_items
+    public class GenerateItems
     {
         public static void generateItems()
         {
-            ShopItem IronArmor = new ShopItem("IronArmor", 0, 15);
+            /*ShopItem IronArmor = new ShopItem("IronArmor", 0, 15);
             ShopItem GoldArmor = new ShopItem("GoldArmor", 50, 25);
             ShopItem DiamondArmor = new ShopItem("DiamondArmor", 100, 35);
 
@@ -21,7 +21,12 @@ namespace Project1.Services
             ShopItem DiamondSword = new ShopItem("DiamondSword", 100, 35);
 
             ShopItem HealingPotion = new ShopItem("HealingPotion", 15, 20);
-            ShopItem DamagePotion = new ShopItem("DamagePotion", 15, 10);
+            ShopItem DamagePotion = new ShopItem("DamagePotion", 15, 10);*/
+        }
+
+        public static ShopItem GenerateItem(string name, int price, int value)
+        {
+            return new ShopItem(name, price, value);
         }
     }
 }
