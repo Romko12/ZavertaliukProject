@@ -8,26 +8,33 @@ namespace Project1.Pages
     public partial class HomePage : UserControl
     {
         Form1 mainForm;
-        public HomePage(Form1 mainForm)
+        Player player;
+        public HomePage(Form1 mainForm, Player player)
         {
             InitializeComponent();
             this.mainForm = mainForm;
         }
-
+        private int varplay = 0;
         private void playButton_Click(object sender, EventArgs e)
         {
-            int varplay = 0;
-            if (varplay == 0)
+
+            if (this.varplay == 0)
             {
-                varplay = 1;
+                this.varplay = 1;
                 this.mainForm.panelContent.Controls.Clear();
-                this.mainForm.panelContent.Controls.Add(new charactercreation());
+                this.mainForm.panelContent.Controls.Add(new charactercreation(this.mainForm));
             }
             else
             {
                 this.mainForm.panelContent.Controls.Clear();
                 this.mainForm.panelContent.Controls.Add(new MapPage());
             }
+        }
+
+        private void InvButton2_Click(object sender, EventArgs e)
+        {
+            this.mainForm.panelContent.Controls.Clear();
+            this.mainForm.panelContent.Controls.Add(new InventoryPage(this.mainForm.player, this.mainForm));
         }
     }
 }

@@ -31,7 +31,6 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(HomePage));
             this.playButton = new System.Windows.Forms.Button();
             this.InvButton2 = new System.Windows.Forms.Button();
-            this.shopButton2 = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.GameNamePictureBox = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -56,15 +55,7 @@
             this.InvButton2.TabIndex = 4;
             this.InvButton2.Text = "Inventory";
             this.InvButton2.UseVisualStyleBackColor = true;
-            // 
-            // shopButton2
-            // 
-            this.shopButton2.Location = new System.Drawing.Point(382, 340);
-            this.shopButton2.Name = "shopButton2";
-            this.shopButton2.Size = new System.Drawing.Size(220, 49);
-            this.shopButton2.TabIndex = 5;
-            this.shopButton2.Text = "Shop";
-            this.shopButton2.UseVisualStyleBackColor = true;
+            this.InvButton2.Click += new System.EventHandler(this.InvButton2_Click);
             // 
             // pictureBox1
             // 
@@ -92,7 +83,6 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 23F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Silver;
-            this.Controls.Add(this.shopButton2);
             this.Controls.Add(this.InvButton2);
             this.Controls.Add(this.GameNamePictureBox);
             this.Controls.Add(this.playButton);
@@ -112,6 +102,5 @@
         private System.Windows.Forms.PictureBox GameNamePictureBox;
         public System.Windows.Forms.Button playButton;
         public System.Windows.Forms.Button InvButton2;
-        public System.Windows.Forms.Button shopButton2;
     }
 }

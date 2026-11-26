@@ -33,8 +33,8 @@
             this.TankPictureBox = new System.Windows.Forms.PictureBox();
             this.PlayerNamingLabel = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
-            this.TankRadioButton1 = new System.Windows.Forms.RadioButton();
-            this.MageRadioButton2 = new System.Windows.Forms.RadioButton();
+            this.PlayerImgVarRadioButton1 = new System.Windows.Forms.RadioButton();
+            this.PlayerImgVarRadioButton2 = new System.Windows.Forms.RadioButton();
             this.button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.MagePictureBox)).BeginInit();
@@ -87,27 +87,27 @@
             this.textBox1.Size = new System.Drawing.Size(327, 46);
             this.textBox1.TabIndex = 6;
             // 
-            // TankRadioButton1
+            // PlayerImgVarRadioButton1
             // 
-            this.TankRadioButton1.AutoSize = true;
-            this.TankRadioButton1.Location = new System.Drawing.Point(134, 444);
-            this.TankRadioButton1.Name = "TankRadioButton1";
-            this.TankRadioButton1.Size = new System.Drawing.Size(75, 27);
-            this.TankRadioButton1.TabIndex = 7;
-            this.TankRadioButton1.TabStop = true;
-            this.TankRadioButton1.Text = "Tank";
-            this.TankRadioButton1.UseVisualStyleBackColor = true;
+            this.PlayerImgVarRadioButton1.AutoSize = true;
+            this.PlayerImgVarRadioButton1.Location = new System.Drawing.Point(134, 444);
+            this.PlayerImgVarRadioButton1.Name = "PlayerImgVarRadioButton1";
+            this.PlayerImgVarRadioButton1.Size = new System.Drawing.Size(75, 27);
+            this.PlayerImgVarRadioButton1.TabIndex = 7;
+            this.PlayerImgVarRadioButton1.TabStop = true;
+            this.PlayerImgVarRadioButton1.Text = "Tank";
+            this.PlayerImgVarRadioButton1.UseVisualStyleBackColor = true;
             // 
-            // MageRadioButton2
+            // PlayerImgVarRadioButton2
             // 
-            this.MageRadioButton2.AutoSize = true;
-            this.MageRadioButton2.Location = new System.Drawing.Point(765, 444);
-            this.MageRadioButton2.Name = "MageRadioButton2";
-            this.MageRadioButton2.Size = new System.Drawing.Size(82, 27);
-            this.MageRadioButton2.TabIndex = 8;
-            this.MageRadioButton2.TabStop = true;
-            this.MageRadioButton2.Text = "Mage";
-            this.MageRadioButton2.UseVisualStyleBackColor = true;
+            this.PlayerImgVarRadioButton2.AutoSize = true;
+            this.PlayerImgVarRadioButton2.Location = new System.Drawing.Point(765, 444);
+            this.PlayerImgVarRadioButton2.Name = "PlayerImgVarRadioButton2";
+            this.PlayerImgVarRadioButton2.Size = new System.Drawing.Size(82, 27);
+            this.PlayerImgVarRadioButton2.TabIndex = 8;
+            this.PlayerImgVarRadioButton2.TabStop = true;
+            this.PlayerImgVarRadioButton2.Text = "Mage";
+            this.PlayerImgVarRadioButton2.UseVisualStyleBackColor = true;
             // 
             // button1
             // 
@@ -124,8 +124,8 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 23F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.MageRadioButton2);
-            this.Controls.Add(this.TankRadioButton1);
+            this.Controls.Add(this.PlayerImgVarRadioButton2);
+            this.Controls.Add(this.PlayerImgVarRadioButton1);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.PlayerNamingLabel);
             this.Controls.Add(this.TankPictureBox);
@@ -150,8 +150,8 @@
         private System.Windows.Forms.PictureBox TankPictureBox;
         private System.Windows.Forms.Label PlayerNamingLabel;
         private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.RadioButton TankRadioButton1;
-        private System.Windows.Forms.RadioButton MageRadioButton2;
+        private System.Windows.Forms.RadioButton PlayerImgVarRadioButton1;
+        private System.Windows.Forms.RadioButton PlayerImgVarRadioButton2;
         private System.Windows.Forms.Button button1;
     }
 }

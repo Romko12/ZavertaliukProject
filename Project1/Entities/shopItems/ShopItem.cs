@@ -6,12 +6,12 @@ using System.Threading.Tasks;
 
 namespace Project1.Entities.shopItems
 {
-    public abstract class BaseItem : BaseEntity
+    public class ShopItem : BaseEntity
     {
         protected int _price;
         protected int _value;
 
-        public BaseItem(string name, int price, int value) : base(name)
+        public ShopItem(string name, int price, int value) : base(name)
         {
             _price = price;
             _value = value;
@@ -19,5 +19,8 @@ namespace Project1.Entities.shopItems
         }
 
         public int GetPrice() => _price;
+        public int GetDefense() => _value;
+        public int GetDamage() => _value;
+        public int GetEffectAmount() => _value;
     }
 }

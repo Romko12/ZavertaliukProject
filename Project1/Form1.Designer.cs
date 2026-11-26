@@ -35,9 +35,6 @@
             this.Item1PictureBox = new System.Windows.Forms.PictureBox();
             this.Item2PictureBox = new System.Windows.Forms.PictureBox();
             this.MoneyPictureBox = new System.Windows.Forms.PictureBox();
-            this.InvButton = new System.Windows.Forms.Button();
-            this.ShopButton = new System.Windows.Forms.Button();
-            this.MapButton = new System.Windows.Forms.Button();
             this.HomeButton = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panelContent = new System.Windows.Forms.Panel();
@@ -57,9 +54,6 @@
             this.panel2.Controls.Add(this.Item1PictureBox);
             this.panel2.Controls.Add(this.Item2PictureBox);
             this.panel2.Controls.Add(this.MoneyPictureBox);
-            this.panel2.Controls.Add(this.InvButton);
-            this.panel2.Controls.Add(this.ShopButton);
-            this.panel2.Controls.Add(this.MapButton);
             this.panel2.Controls.Add(this.HomeButton);
             this.panel2.Controls.Add(this.pictureBox1);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
@@ -123,36 +117,6 @@
             this.MoneyPictureBox.TabIndex = 5;
             this.MoneyPictureBox.TabStop = false;
             // 
-            // InvButton
-            // 
-            this.InvButton.Location = new System.Drawing.Point(153, 3);
-            this.InvButton.Name = "InvButton";
-            this.InvButton.Size = new System.Drawing.Size(44, 32);
-            this.InvButton.TabIndex = 4;
-            this.InvButton.Text = "I";
-            this.InvButton.UseVisualStyleBackColor = true;
-            this.InvButton.Click += new System.EventHandler(this.InvButton_Click);
-            // 
-            // ShopButton
-            // 
-            this.ShopButton.Location = new System.Drawing.Point(103, 3);
-            this.ShopButton.Name = "ShopButton";
-            this.ShopButton.Size = new System.Drawing.Size(44, 32);
-            this.ShopButton.TabIndex = 3;
-            this.ShopButton.Text = "S";
-            this.ShopButton.UseVisualStyleBackColor = true;
-            this.ShopButton.Click += new System.EventHandler(this.ShopButton_Click);
-            // 
-            // MapButton
-            // 
-            this.MapButton.Location = new System.Drawing.Point(53, 3);
-            this.MapButton.Name = "MapButton";
-            this.MapButton.Size = new System.Drawing.Size(44, 32);
-            this.MapButton.TabIndex = 2;
-            this.MapButton.Text = "M";
-            this.MapButton.UseVisualStyleBackColor = true;
-            this.MapButton.Click += new System.EventHandler(this.MapButton_Click);
-            // 
             // HomeButton
             // 
             this.HomeButton.Location = new System.Drawing.Point(3, 3);
@@ -212,9 +176,6 @@
         private System.Windows.Forms.PictureBox Item1PictureBox;
         private System.Windows.Forms.PictureBox Item2PictureBox;
         private System.Windows.Forms.PictureBox MoneyPictureBox;
-        private System.Windows.Forms.Button InvButton;
-        private System.Windows.Forms.Button ShopButton;
-        private System.Windows.Forms.Button MapButton;
         private System.Windows.Forms.Button HomeButton;
         private System.Windows.Forms.PictureBox pictureBox1;
         public System.Windows.Forms.Panel panelContent;
